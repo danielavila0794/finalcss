@@ -1,0 +1,266 @@
+
+@font-face {
+  font-family: 'Dancing-Script';
+  src: url('DancingScript-Regular.otf');
+}
+body{
+		font-family:'Dancing-Script';
+		background-color: #02010a;
+}
+h1{
+  font-size: 2.8em;
+}
+
+.contenido{
+	width: 100%;
+}
+/* imagenes */
+img{
+	-webkit-box-shadow: 2px 2px 5px #02010a;
+}
+/* Hipervínculos */
+#cabecera a{
+	text-decoration: underline;
+	color: white;
+}
+nav a.active {
+    text-decoration: none !important;
+}
+a:visited{
+  color: inherit;
+}
+a:link{
+	color: inherit;
+}
+/* cabecera */
+#cabecera{
+	width: 100%;
+	height: 200px;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	display: flex;
+	flex-flow: wrap;
+}
+	/* nombre */
+#cabecera div{
+		width: 100%;
+		color: white;
+		text-shadow: -2px 0px 1px #02010a;
+		margin: auto;
+	}
+#cabecera div h1{
+		width: 90%;
+		margin: auto;
+		text-align: center;
+	}
+	/* menu principal */
+#cabecera nav{
+		width: 100%;
+		margin: auto;
+		color: white;
+		text-align: center;
+	}
+#cabecera nav h2{
+		width: 100%;
+		display: inline;
+		padding: 0 15px;
+    font-size: 1.9em;
+	}
+/* imagen principal */
+#imagenp{
+	width: 100%;
+	margin: auto;
+	background-color:  #82c3a6;
+}
+#imagenp img{
+	align-items: center;
+	width: 90%;
+	margin: 5% 5%;
+}
+/* imagen secundaria */
+.contenedor{
+	display: flex;
+	flex-flow: wrap;
+	width: 100%;
+	background-color: #d5c75f;
+}
+.contenedor1{
+	margin: auto;
+	width: 100%;
+}
+.contenedor1 img{
+	border: 1px solid;
+	width:90%;
+	margin: 5% 5%;
+}
+
+.contenedor1 h2{
+	line-height: 1;
+	text-decoration: underline;
+	text-align: center;
+}
+/* galeria */
+.galeria{
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  background-color: #d5c75f;
+}
+.pare1{
+  margin: auto;
+  width: 100%;
+}
+.pare1 img{
+  border: 1px solid;
+  width: 90%;
+  margin: 5% 5%;
+}
+/* pie de paginal */
+#pie{
+	width: 100%;
+  height: auto;
+	background-color: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	flex-flow: wrap;
+
+}
+.contacto{
+	width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.termino{
+	width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.redes{
+	width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.derechos{
+	width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#pie h2, #pie h3 {
+	width: 90%;
+  padding-left: 5%;
+	text-align: left;
+  font-size: 1.5em;
+}
+
+#pie h3{
+  line-height: 1.1;
+  font-size: 0.8em;
+}
+.menured{
+  width: 100%;
+  display: inline-flex;
+}
+.menured nav{
+  width: 20%;
+  margin: auto;
+  padding-left: 10%;
+
+}
+.menured nav img{
+  width: 100%;
+  -webkit-box-shadow: none;
+  border-radius: 10px;
+}
+.menured h3{
+  width: auto;
+  margin: auto;
+}
+/* dispositivo movil */
+@media (min-width: 600px) {
+#cabecera nav{		/* menu*/
+	width: 20%;
+	text-align: left;
+}
+#cabecera nav h2{
+	display: table;
+	width: auto;
+	line-height: 0.5;
+}
+#cabecera div{		/* nombre*/
+	width: 80%;
+}
+#cabecera div h1{
+	text-align: left;
+}
+@media (min-width: 900px) {
+.contenido{
+	margin: auto;
+	width: 900px;
+}
+#cabecera nav{		/* menu*/
+	width: 40%;
+	text-align: center;
+}
+#cabecera nav h2{
+		display: inline-flex;
+		line-height: 1.5;
+}
+#cabecera div{		/* nombre*/
+	width: 60%;
+}
+#cabecera div h1{
+	text-align: left;
+}
+.contenedor1{		/* imagen secundaria */
+	width: 50%;
+}
+.pare1{         /* galeria */
+  width: 33.33%;
+}
+#pie{
+  display: inline-flex;
+}
+.contacto, .termino, .redes, .derechos{
+  width: 20%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+#pie h2{
+  font-size: 2em;
+}
+#pie h3{
+  font-size: 1.2em;
+}
+
+}
+/* animaciones */
+.ani1{
+	transition-property: all;
+	transition-duration: 1s;;
+}
+.ani1:hover{
+	-webkit-box-shadow: 2px 2px 5px #82c3a6;
+	transform: rotate(10deg);
+	border: 2px solid #82c3a6;
+}
+.ani2{
+	transition-property: all;
+	transition-duration: 1s;
+}
+.ani2:hover{
+	transform:  translate(20px, -5px);
+	border: 2px solid #82c3a6;
+	-webkit-box-shadow: 2px 2px 5px #82c3a6;
+}
+/* efectos */
+.blur {
+-webkit-filter: blur(10px);
+filter: blur(10px);
+}
+.gris {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+.sepia {
+-webkit-filter: sepia(90%);
+filter: sepia(90%);
+}
